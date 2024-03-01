@@ -1,22 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LorenaSusanaVivas</title>
-    <script defer src="./main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>...</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/products.js"></script>
 </head>
 <body>
-    <h1>Bienvenidos!
-    </h1>
-    <h3>
-        Esta es la primera entrega para Coder JavaScript Flex
-    </h3>
-    <p>Los puntos a destacar del presente trabajo es la interacción con el usuario mediante Prompt y Alert, 
-        declaración de variables y constantes, ciclos de interación y condicionales.
-        El usuario ingresa su nombre, devuelve un saludo y luego se le pide al usuario que indique que producto desea consultar, dependiendo de su respuesta se le indica el precio del producto seleccionado.
-        Luego se le consulta si desea o no seguir consultando productos, si su respuesta es sí, vuelve al menú, sino se lo despide y se lo invita a seguirnos en nuestras redes.
-    </p>
+      <!--navBar-->
+      <div class="nav-container">
+        <nav class="navbar">
+        <h1 class="navbar-logo">Shop</h1>
+        <h1 class="ver-carrito" id="verCarrito">🛒</h1>
+       
+        </nav>
+      </div>
+       
+                        
+  
+
+<!--Shop content-->
+<div id="shopContent" class="shop-content"></div>
+
+<!--contenido del modal-->
+<div id="modal-container" class="modal-container"></div>
+
+
+
+<script src="./js/products.js"></script>   
 </body>
 </html>
+
+
+
 
