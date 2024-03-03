@@ -9,7 +9,6 @@ body {
 /*navbar*/
 .nav-container {
     position: sticky;
-    z-index: 3;
     top:0;
 }
 .navbar {
@@ -40,8 +39,9 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -57,6 +57,7 @@ body {
 .card > img {
     width: 90%;
     height: 250px;
+    border-radius: 10%;
 }
 
 .price {
@@ -74,27 +75,29 @@ body {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+    border-radius: 10%;
 }
 
 .card button:hover{
     opacity: 0.7;
 }
+.comprar:hover{
+    text-decoration: underline;
+}
+
 
 /*modal estilos*/
 .modal-container {
-    width: 40%;
-    background-color: rgb(245, 218, 218);
+    background-color: rgba(167, 138, 45, 0.751);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10 10%;
-    max-height: 50vh;
-    color:rgb(162, 110, 31);
-    position: fixed;
-    overflow: auto;
-    z-index: 9;
-    top: 12vh;
-    scrollbar-color: none;
+    width: 400px;
+    height: 500px;
+    color:rgb(250, 192, 104);
+    
+   
 }
 
 .modal-header {

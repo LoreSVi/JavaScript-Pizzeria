@@ -1,26 +1,9 @@
-/*
-const inputNombre = document.getElementById('nombre');
-const inputApellido = document.getElementById('apellido');
-const botonDatos = document.getElementById('botonDatos')
-
-botonDatos.onclick = () => {
-const usuario = {
-    nombre: inputNombre.value,
-    apellido: inputApellido.value
-}
-inputNombre.value = ''
-inputApellido.value = ''
-console.log(usuario)
-
-localStorage.setItem('InfoUsuario',JSON.stringify(usuario))
-}
-
-*/
 
 const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 
+   
 let carrito = [];
 productos.forEach((product) => {
     let content = document.createElement("div");
@@ -33,6 +16,7 @@ productos.forEach((product) => {
 
         shopContent.append(content);
 
+  
         let comprar = document.createElement("button");
         comprar.innerText = "comprar";
         comprar.className = "comprar";
@@ -63,9 +47,11 @@ const modalbutton = document.createElement("h1");
 modalbutton.innerText = "x";
 modalbutton.className = "modal-header-button";
 
+ 
 modalbutton.addEventListener('click', () => {
     modalContainer.style.display = 'none';
 });
+
 
 modalHeader.append(modalbutton);
 
@@ -76,15 +62,50 @@ carritoContent.innerHTML = `
 <img src="${product.img}">
     <h3>${product.nombre}</h3>
     <p class="price">${product.precio} $</p>
-    `;
+    <div class="cantidad">
+    <button id="plus-button">+</button>
+<span id="counter">0</span>
+<button id="minus-button">-</button> 
+</div>
+    `
+    
+    modalHeader.append(modalbutton);
+;  
 
     modalContainer.append(carritoContent);
   });
 
-  const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    /*contador */
+let counter = document.getElementById("counter")
+let sumar = document.getElementById("plus-button")
+let restar = document.getElementById("minus-button")
+let contador = 0
+
+sumar.onclick = () => {
+   contador ++
+    counter.innerHTML = contador
+   restar.disabled = false
+}
+
+restar.onclick = () => {
+   if (contador === 0) {
+        restar.disabled = true
+   } else {
+       contador --
+        counter.innerHTML = contador
+    }
+   
+}    
+
+    ;
+
+
+ 
+  const total = carrito.reduce((acc, el) => acc + (el.precio), 0);
 
   const totalCompra = document.createElement("div")
   totalCompra.className = "total-content"
   totalCompra.innerHTML =  `Total a pagar: ${total}$`;
   modalContainer.append(totalCompra);
 });
+
