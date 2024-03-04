@@ -1,138 +1,155 @@
 body {
-    margin: 0px;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-color: yellow;
-
+  margin: 0px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: yellow;
 }
 /*navbar*/
 .nav-container {
-    position: sticky;
-    top:0;
+  position: sticky;
+  top: 0;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    height: 12vh;
- background-color:red;
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  width: 100%;
+  background-color: red;
 }
 
 .navbar-logo {
-    justify-self: start;
-    margin-left: 20px;
-    color:bisque;
-    margin-top: 4vh;
-    cursor: pointer;
+  justify-self: start;
+  margin-left: 20px;
+  color: bisque;
+  margin-top: 4vh;
+  cursor: pointer;
 }
 
 .ver-carrito {
-    font-size: 25px;
-    margin-right: 20px;
-    margin-top: 4vh;
-    cursor: pointer;
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 4vh;
+  cursor: pointer;
 }
 
-
 .shop-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:12px;
+  margin:30px;
+  padding-bottom: 10px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 350px;
-    width: 250px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: rgba(167, 138, 45, 0.751);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: rgba(167, 138, 45, 0.751);
 }
 
 .card > img {
-    width: 90%;
-    height: 250px;
-    border-radius: 10%;
+  width: 90%;
+  height: 250px;
+  border-radius: 10%;
 }
 
 .price {
-    color: rgb(78, 37, 228);
-    font-size: 20px;
+  color: rgb(78, 37, 228);
+  font-size: 20px;
 }
 
 .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    border-radius: 10%;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10%;
 }
 
-.card button:hover{
-    opacity: 0.7;
+.card button:hover {
+  opacity: 0.7;
 }
-.comprar:hover{
-    text-decoration: underline;
+.comprar:hover {
+  text-decoration: underline;
 }
-
 
 /*modal estilos*/
+/*
 .modal-container {
     background-color: rgba(167, 138, 45, 0.751);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  position: fixed;
+  overflow: auto;
+}
+*/
+.modal-container {
+    width: 100%;
+    background-color: rgba(24, 21, 11, 0.751);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10 10%;
-    width: 400px;
-    height: 500px;
-    color:rgb(250, 192, 104);
-    
-   
+    margin: 15 10%;
+    max-height: 70vh;
+    position:absolute;
+ 
+    z-index: 2;
+    top: 12vh;
+    scrollbar-color: none;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(163, 33, 33);
-    color: antiquewhite;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(163, 33, 33);
+  color: antiquewhite;
+  width: 100%;
 }
 
 .modal-header-title {
-    justify-self: start;
+  justify-self: start;
 }
 
 .modal-header-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal-container > .modal-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    margin: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 8px;
+  color:white;
 }
 
 .modal-container > div > img {
-    height: 110px;
-    width: 110px;
+  height: 150px;
+  width: 150px;
 }
-
+.modal-container .price{
+    color:white;
+}
 .total-content {
-    font-size: 25px;
-    padding: 20px;
-    text-align: center;
-    padding-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  padding-top: 20px;
 }

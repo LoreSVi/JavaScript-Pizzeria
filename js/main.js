@@ -10,8 +10,8 @@ productos.forEach((product) => {
     content.className = "card";
     content.innerHTML = `
     <img src="${product.img}">
-        <h3>${product.nombre}</h3>
-        <p class="price">${product.precio} $</p>
+        <h3> ${product.nombre}</h3>
+        <p class="price"> ${product.precio} $</p>
         `;
 
         shopContent.append(content);
@@ -33,6 +33,7 @@ productos.forEach((product) => {
             console.log(carrito);
         });
 });
+
 
 verCarrito.addEventListener("click", () => {
 modalContainer.innerHTML = '';
@@ -61,7 +62,7 @@ carritoContent.className = "modal-content";
 carritoContent.innerHTML = `
 <img src="${product.img}">
     <h3>${product.nombre}</h3>
-    <p class="price">${product.precio} $</p>
+    <p class="price">$ ${product.precio} </p>
     <div class="cantidad">
     <button id="plus-button">+</button>
 <span id="counter">0</span>
@@ -76,6 +77,7 @@ carritoContent.innerHTML = `
   });
 
     /*contador */
+    
 let counter = document.getElementById("counter")
 let sumar = document.getElementById("plus-button")
 let restar = document.getElementById("minus-button")
@@ -105,7 +107,10 @@ restar.onclick = () => {
 
   const totalCompra = document.createElement("div")
   totalCompra.className = "total-content"
-  totalCompra.innerHTML =  `Total a pagar: ${total}$`;
+  totalCompra.innerHTML =  `Total a pagar: $ ${total}`;
   modalContainer.append(totalCompra);
 });
+
+
+
 
