@@ -83,20 +83,7 @@ body {
   text-decoration: underline;
 }
 
-/*modal estilos*/
-/*
-.modal-container {
-    background-color: rgba(167, 138, 45, 0.751);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 600px;
-  height: 600px;
-  position: fixed;
-  overflow: auto;
-}
-*/
+
 .modal-container {
     width: 100%;
     background-color: rgba(24, 21, 11, 0.751);
@@ -106,7 +93,7 @@ body {
     margin: 15 10%;
     max-height: 70vh;
     position:absolute;
- 
+    color:white;
     z-index: 2;
     top: 12vh;
     scrollbar-color: none;
@@ -152,4 +139,8 @@ body {
   padding: 10px;
   text-align: center;
   padding-top: 20px;
+}
+
+.modal-header-button:hover{
+  text-decoration: underline;
 }

@@ -5,6 +5,7 @@ const modalContainer = document.getElementById("modal-container");
 
    
 let carrito = [];
+
 productos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card";
@@ -40,12 +41,12 @@ modalContainer.innerHTML = '';
 const modalHeader = document.createElement("div");
 modalHeader.className = "modal-header"
 modalHeader.innerHTML = 
-`<h1 class="modal-header-title">Carrito</h1>
+`<h1 class="modal-header-title">Tu carrito🛒 </h1>
 `;
 modalContainer.append(modalHeader);
 
 const modalbutton = document.createElement("h1");
-modalbutton.innerText = "x";
+modalbutton.innerText = "cerrar❎";
 modalbutton.className = "modal-header-button";
 
  
@@ -68,20 +69,21 @@ carritoContent.innerHTML = `
 <span id="counter">0</span>
 <button id="minus-button">-</button> 
 </div>
-    `
-    
+
+` 
     modalHeader.append(modalbutton);
 ;  
 
     modalContainer.append(carritoContent);
   });
 
-    /*contador */
+   
     
 let counter = document.getElementById("counter")
 let sumar = document.getElementById("plus-button")
 let restar = document.getElementById("minus-button")
 let contador = 0
+
 
 sumar.onclick = () => {
    contador ++
@@ -99,7 +101,19 @@ restar.onclick = () => {
    
 }    
 
-    ;
+
+/*
+  const totalProducto =   contador.onchange =() => {
+   product.precio = product.precio * contador;
+
+  const totalp = document.createElement("div")
+  totalp.className = "totalp-content"
+  totalp.innerHTML =  `Total a pagar: $ ${totalProducto}`;
+  modalContainer.append(totalp);
+
+    }
+    */
+;
 
 
  
@@ -110,6 +124,7 @@ restar.onclick = () => {
   totalCompra.innerHTML =  `Total a pagar: $ ${total}`;
   modalContainer.append(totalCompra);
 });
+
 
 
 
