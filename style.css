@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 15 10%;
-    max-height: 70vh;
+    max-height: 90vh;
     position:absolute;
     color:white;
     z-index: 2;

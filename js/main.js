@@ -101,22 +101,19 @@ restar.onclick = () => {
    
 }    
 
-
 /*
-  const totalProducto =   contador.onchange =() => {
-   product.precio = product.precio * contador;
+if(contador !== 0){
+    el.precio = el.precio * contador
+}else{
+    el.precio = el.precio
+}
 
-  const totalp = document.createElement("div")
-  totalp.className = "totalp-content"
-  totalp.innerHTML =  `Total a pagar: $ ${totalProducto}`;
-  modalContainer.append(totalp);
+ const totalProducto = document.createElement("div")
+totalProducto.className="total-producto"
+totalProducto.innerHTML= `Total producto: $ ${el.precio}`;
+modalContainer.append(totalProducto);
+*/
 
-    }
-    */
-;
-
-
- 
   const total = carrito.reduce((acc, el) => acc + (el.precio), 0);
 
   const totalCompra = document.createElement("div")
