@@ -3,9 +3,9 @@ const shopContent = document.getElementById("shopContent");
 const verCarrito = document.getElementById("verCarrito");
 const modalContainer = document.getElementById("modal-container");
 
-   
 let carrito = [];
 
+//creacion cards de los productos
 productos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "card";
@@ -14,15 +14,16 @@ productos.forEach((product) => {
         <h3> ${product.nombre}</h3>
         <p class="price"> ${product.precio} $</p>
         `;
+ shopContent.append(content);
 
-        shopContent.append(content);
-
-  
+  //boton compar
         let comprar = document.createElement("button");
         comprar.innerText = "comprar";
         comprar.className = "comprar";
 
         content.append(comprar);
+
+
 
         comprar.addEventListener("click", () => {
             carrito.push({
@@ -89,7 +90,8 @@ sumar.onclick = () => {
    contador ++
     counter.innerHTML = contador
    restar.disabled = false
-}
+};
+
 
 restar.onclick = () => {
    if (contador === 0) {
@@ -97,24 +99,18 @@ restar.onclick = () => {
    } else {
        contador --
         counter.innerHTML = contador
-    }
-   
-}    
+    } 
+}   ;
 
-/*
-if(contador !== 0){
-    el.precio = el.precio * contador
-}else{
-    el.precio = el.precio
+function nuevaCantP() {
+    cantidad = counter;
 }
 
- const totalProducto = document.createElement("div")
-totalProducto.className="total-producto"
-totalProducto.innerHTML= `Total producto: $ ${el.precio}`;
-modalContainer.append(totalProducto);
-*/
+nuevaCantP;
 
-  const total = carrito.reduce((acc, el) => acc + (el.precio), 0);
+
+
+  const total = carrito.reduce((acc, el) => acc + (el.precio * cantidad), 0);
 
   const totalCompra = document.createElement("div")
   totalCompra.className = "total-content"
