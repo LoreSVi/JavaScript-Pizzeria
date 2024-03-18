@@ -1,4 +1,4 @@
-
+/*
 let input = document.getElementById("search")
  const pizzas = ["napolitana", "fugazzeta", "cuadrada", "calzone"]
  
@@ -16,5 +16,5 @@ let input = document.getElementById("search")
     document.body.appendChild(print)
  }
  }
-  
+  */
  
