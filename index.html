@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Font Google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <!-- ToastifY CSS -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-        <!-- CSS -->
-        <link rel="stylesheet" href="./style.css">
-        <!-- JS -->
-        <script defer src="./js/main.js"></script>
-        <title>JORNA pizza</title>
-        <!-- favicon-->
-        <link rel="icon" type="img/png" href="./IMG/pizza.png" sizes="16x16">
-    </head>
-    <body>
-        <header>
-            <a id="container-logo" href="./index.html">
-                <img id="logo" src="./IMG/pizza.png" alt="logo">JorNa
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ToastifY CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- JS -->
+    <script defer src="./js/main.js"></script>
+    <title>JORNA pizza</title>
+    <!-- favicon-->
+    <link rel="icon" type="img/png" href="./IMG/pizza.png" sizes="16x16" />
+  </head>
+  <body>
+    <header>
+      <a id="container-logo" href="./index.html">
+        <img id="logo" src="./IMG/pizza.png" alt="logo" />JorNa
+      </a>
 
-            <p id="saludo">Bienvenidos!!</p>
+      <p id="saludo">Bienvenidos!!</p>
 
-            <!-- Aca esta solo el logo del carrito con el contador de productos agregados -->
-            <div id="container-cart">
-                <a href="./pages/carrito.html">
-                    <figure class="container-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="icon-cart" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                        </svg>
-                    </figure>
-                </a>
-                <span id="count">0</span>
-            </div>
-        </header>
+      <!-- Aca esta solo el logo del carrito con el contador de productos agregados -->
+      <div id="container-cart">
+        <a href="./pages/carrito.html">
+          <figure class="container-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              id="icon-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+          </figure>
+        </a>
+        <span id="count">0</span>
+      </div>
+    </header>
 
-        <main>
-          <!--buscador-->
+    <main>
+      <!--buscador-->
       <div class="buscador" id="buscador">
-        <input type="text" id="search"> Buscá tu pizza 
-       </div>
-            <h2 class="caption">Productos</h2>
+        <input type="text" id="search" /> Buscá tu pizza
+      </div>
+      <h2 class="caption">Productos</h2>
 
-            <!-- Aca se renderizan todos los productos que se pueden agregar al carrito -->
-            <section id="container-products">
-            
-            </section>
-        </main>
+      <!-- Aca se renderizan todos los productos que se pueden agregar al carrito -->
+      <section id="container-products"></section>
+    </main>
 
-        <!-- Toastify JS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    </body>
+    <!-- Toastify JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
 </html>

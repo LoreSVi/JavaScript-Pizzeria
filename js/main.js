@@ -70,11 +70,11 @@ function toastifyAddCard() {
     text: "Agregado al carrito",
     duration: 2000,
     newWindow: true,
-    gravity: "top",
+    gravity: "bottom",
     position: "left",
     stopOnFocus: true,
     style: {
-      background: "#8AAAFA",
+      background: "#FF0000",
       color: "#151515",
     },
     onClick: function () {},
