@@ -33,8 +33,6 @@ if (cartLS) {
   cart = [];
 }
 
-
-
 //Función para hacer la petición al archivo JSON y retorna el array de objetos de los productos o un error
 async function peticion(rutaJson) {
   try {
@@ -70,7 +68,7 @@ function toastifyAddCard() {
     text: "Agregado al carrito",
     duration: 2000,
     newWindow: true,
-    gravity: "bottom",
+    gravity: "top",
     position: "left",
     stopOnFocus: true,
     style: {
@@ -140,5 +138,3 @@ async function renderProducts() {
   addToCardButton();
 }
 renderProducts();
-
-
