@@ -1,9 +1,9 @@
 
 function eatme() {
-  document.getElementById("myImage").src = "../IMG/nenepizza.jpeg";
+  document.getElementById("myImage").src = "./IMG/nenepizza.jpeg";
 };
 
 function tryA() {
-  document.getElementById("myImage").src = "../IMG/porcionpizza.jpeg";
+  document.getElementById("myImage").src = "./IMG/porcionpizza.jpeg";
 };
 
