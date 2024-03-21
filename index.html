@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./style.css" />
     <!-- JS -->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/eat.js"></script>
+    <script defer src="./js/buscador.js"></script>
     <title>JORNA pizza</title>
     <!-- favicon-->
     <link rel="icon" type="img/png" href="./IMG/pizza.png" sizes="16x16" />
@@ -51,19 +53,33 @@
         <span id="count">0</span>
       </div>
     </header>
-   <div class="animation">
-<button onclick="document.getElementById('myImage').src='../IMG/nenepizza.jpeg'">eat me</button>
+    
+    <div class="animation">
+      <button
+        onclick="document.getElementById('myImage').src='./IMG/nenepizza.jpeg'"
+      >
+        eat me
+      </button>
 
-<img id="myImage" src="../IMG/porcionpizza.jpeg" style="width:100px">
+      <img id="myImage" src="./IMG/porcionpizza.jpeg" style="width: 100px" />
 
-<button onclick="document.getElementById('myImage').src='../IMG/porcionpizza.jpeg'">Try again</button>
-</div>
+      <button
+        onclick="document.getElementById('myImage').src='./IMG/porcionpizza.jpeg'"
+      >
+        Try again
+      </button>
+    </div>
+
+    <!-- <asaide> -->
+      <!--buscador-->
+<!--       
+      <div class="buscador" id="buscador">
+        <h3>Buscá tu pizza</h3>
+        <input type="text" id="search" />
+      </div>
+    </asaide> --> 
 
     <main>
-      <!--buscador-->
-      <div class="buscador" id="buscador">
-        <input type="text" id="search" /> Buscá tu pizza
-      </div>
       <h2 class="caption">Productos</h2>
 
       <!-- Aca se renderizan todos los productos que se pueden agregar al carrito -->

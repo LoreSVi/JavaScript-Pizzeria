@@ -64,6 +64,10 @@ header p {
   background-color: #ee7777;
 }
 
+.buscador{
+  padding-bottom: 20px;
+}
+
 #container-cart {
   min-width: 2.55rem;
   height: 4rem;
