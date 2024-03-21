@@ -2,6 +2,7 @@
 * {
   font-family: "helvetica", sans-serif;
   font-weight: 500;
+  font-size: medium;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -34,7 +35,7 @@ header p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.55rem;
+  width: 5.55rem;
   height: 2.55rem;
   border-radius: 100%;
 }
@@ -48,6 +49,20 @@ header p {
   border-radius: 100%;
 }
 
+.animation{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding:30px;
+}
+.animation button{
+  border-radius: 30%;
+  height: 35px;
+  padding:10px;
+}
+.animation button:hover{
+  background-color: #ee7777;
+}
 
 #container-cart {
   min-width: 2.55rem;
