@@ -10,19 +10,22 @@
 }
 
 body {
-  background-color: rgb(245, 240, 240);
+  background-color:white;
   color: black;
 }
-
+ h2{
+  font-size: 2.5em;
+ font-weight: 600;
+ }
 /* HEADER */
 header {
-  padding: 1rem 1.5rem 0 2rem;
+
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #fc6e5b;
+  background-color: #e63720;
 }
 header p {
   font-family:sans-serif;
@@ -30,6 +33,54 @@ header p {
   font-size: medium;
   color: aliceblue;
 }
+header a{
+  color: #ffffff;
+}
+
+
+.containerNavbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 2em;
+}
+.categories a {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  color:#e92106;
+}
+.categories a:hover {
+  font-style:italic;
+  text-decoration: underline;
+}
+
+@media (width < 768px) {
+  .containerNavbar {
+    flex-direction: column;
+    display: inline-block;
+    justify-content: space-around;
+    align-items: column;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .categories {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+
 
 #container-logo {
   display: flex;
@@ -61,11 +112,12 @@ header p {
   padding:10px;
 }
 .animation button:hover{
-  background-color: #ee7777;
+  background-color: #f8f831;
 }
 
 .buscador{
   padding-bottom: 20px;
+  padding-left: 2em;
 }
 
 #container-cart {

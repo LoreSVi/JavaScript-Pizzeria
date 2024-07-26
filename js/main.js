@@ -72,8 +72,8 @@ function toastifyAddCard() {
     position: "left",
     stopOnFocus: true,
     style: {
-      background: "#FF0000",
-      color: "#151515",
+      background: "#f7dc6f",
+      color: "#FF0000",
     },
     onClick: function () {},
   }).showToast();

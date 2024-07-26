@@ -25,14 +25,29 @@
     <title>JORNA pizza</title>
     <!-- favicon-->
     <link rel="icon" type="img/png" href="./IMG/pizza.png" sizes="16x16" />
+
+      <!-- Agrega los enlaces a los archivos CSS y JavaScript de Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
   </head>
+
   <body>
     <header>
       <a id="container-logo" href="./index.html">
         <img id="logo" src="./IMG/pizza.png" alt="logo" />JorNa
       </a>
-
-      <p id="saludo">La mejor Pizza!!</p>
+      <!-- FACEBOOK -->
+      <a
+        href="https://www.facebook.com/share/XhQzVj4KHu5ScLtv/?mibextid=qi2Omg"
+        target="_blank"
+      >
+        <img
+          id="img-facebook"
+          src="https://img.icons8.com/fluency/48/null/facebook.png"
+          alt="ir a nuestro facebook"
+        />Contáctanos tocando el link
+      </a>
 
       <!-- Aca esta solo el logo del carrito con el contador de productos agregados -->
       <div id="container-cart">
@@ -54,13 +69,39 @@
       </div>
     </header>
 
-    <!-- animacion -->
-    <div class="animation">
-      
-      <button type="button" onclick="eatme()"> Eat Me</button>
-      <img id="myImage" src="./IMG/porcionpizza.jpeg" style="width: 100px" />
-      <button type="button" onclick="tryA()">try again</button>
+    <!--menu-->
+    <div class="containerNavbar">
+      <div class="categories">
+        <img id="logoJorna" src="./IMG/jorNa.png" style="width: 100px" />
+        <a class="nav-link" href="#">NOSOTROS</a>
+
+        <a class="nav-link" href="#">CONTACTO</a>
+
+        <a class="nav-link" href="#">PRODUCTOS</a>
+
+        <a class="nav-link" href="#">LOGIN</a>
+
+ <!-- animacion -->
+ <div class="animation">
+  <button type="button" onclick="eatme()">click aquí</button>
+  <img id="myImage" src="./IMG/porcionpizza.jpeg" style="width: 100px" />
+  <button type="button" onclick="tryA()">try again</button>
 </div>
+
+      </div>
+    </div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"data-bs-interval="2000">
+      <img src="./IMG/fondoPIzzabollo.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item"data-bs-interval="2000">
+      <img src="./IMG/pizzaTio.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+   
 
     <asaide>
       <!--buscador-->
@@ -74,16 +115,24 @@
     </asaide>
 
     <main>
-      <h2 class="caption">Productos</h2>
+      <h2 class="caption"> PRODUCTOS </h2>
 
       <!-- Aca se renderizan todos los productos que se pueden agregar al carrito -->
       <section id="container-products"></section>
     </main>
+
+
+ <!-- Agrega el enlace al archivo JavaScript de Bootstrap 5 (opcional) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
 
     <!-- Toastify JS -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
+
+
   </body>
 </html>
