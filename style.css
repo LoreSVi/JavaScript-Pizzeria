@@ -118,6 +118,7 @@ header a{
 .buscador{
   padding-bottom: 20px;
   padding-left: 2em;
+  padding-top: 15px;
 }
 
 #container-cart {
@@ -177,6 +178,15 @@ main {
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 19rem));
   justify-content: center;
+}
+
+button{
+  border-radius: 30%;
+}
+
+#botonBuscar{
+  border-radius: 40%;
+  padding: 5px;
 }
 
 .product {
